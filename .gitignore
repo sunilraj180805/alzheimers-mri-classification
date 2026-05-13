@@ -1,0 +1,19 @@
+# Dataset — too large for GitHub, download from Kaggle
+train/
+test/
+
+# Model weights
+*.h5
+*.keras
+*.pkl
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.py[cod]
