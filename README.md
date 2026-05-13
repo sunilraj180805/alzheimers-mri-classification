@@ -36,7 +36,7 @@ A hybrid architecture combining CNN feature extraction with classical ML:
 
 ## 🗂️ Dataset
 
-**OASIS Dataset** (Open Access Series of Imaging Studies) from Kaggle
+**Best Alzheimer's MRI Dataset** from Kaggle
 
 | Class | Description |
 |---|---|
@@ -60,7 +60,7 @@ data/
     └── Moderate_Impairment/
 ```
 
-Download the dataset from [Kaggle — OASIS Alzheimer's Dataset](https://www.kaggle.com/datasets/ninadaithal/imagesoasis).
+> Dataset is not included in this repo due to size. Download from [Kaggle — Best Alzheimer's MRI Dataset](https://www.kaggle.com/datasets/lukechugh/best-alzheimer-mri-dataset-99-accuracy) and place images in `train/` and `test/` folders as shown above.
 
 ---
 
@@ -71,11 +71,12 @@ alzheimers-mri-classification/
 │
 ├── CNN.ipynb                        # CNN model training and evaluation
 ├── HYBRID.ipynb                     # Hybrid model training and evaluation
-├── train/                           # Training MRI images (organized by class)
-├── test/                            # Test MRI images (organized by class)
+├── train/                           # Training MRI images — download from Kaggle
+├── test/                            # Test MRI images — download from Kaggle
 ├── Alzheimers Disease Paper.pdf     # Published research paper
 ├── Alzheimer's disease Report.pdf   # Full project report
 ├── requirements.txt
+├── .gitignore
 └── README.md
 ```
 
@@ -122,7 +123,7 @@ pip install -r requirements.txt
 ```
 
 ### 3. Download Dataset
-Download from [Kaggle](https://www.kaggle.com/datasets/ninadaithal/imagesoasis) and place images in the `train/` and `test/` folders as shown in the structure above.
+Download from [Kaggle](https://www.kaggle.com/datasets/lukechugh/best-alzheimer-mri-dataset-99-accuracy) and place images in the `train/` and `test/` folders as shown in the structure above.
 
 ### 4. Run CNN Model
 Open and run all cells in:
@@ -147,7 +148,7 @@ This project was submitted as a research paper. The full paper is available in t
 
 ## ⚠️ Limitations
 
-- Models trained on OASIS dataset — performance on other MRI formats may vary
+- Models trained on this dataset — performance on other MRI formats may vary
 - Grayscale MRI only — color or 3D volumetric scans require preprocessing changes
 - Moderate Impairment class has fewer samples — slight class imbalance present
 
@@ -161,6 +162,14 @@ This project was submitted as a research paper. The full paper is available in t
 
 ---
 
+## 👥 Team
+
+- **Sunilraj D** — Model development, training pipeline, evaluation
+- Aniketh Reddy — Repository management
+- *(add other teammates and their roles)*
+
+---
+
 ## 📜 License
 
 This project is licensed under [CC0-1.0](LICENSE) — open for research and educational use.
@@ -169,5 +178,5 @@ This project is licensed under [CC0-1.0](LICENSE) — open for research and educ
 
 ## 🙋 Author
 
-**Sunilraj D** — primary developer  
+**Sunilraj D**
 [GitHub](https://github.com/sunilraj180805)
